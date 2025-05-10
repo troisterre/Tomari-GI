@@ -150,20 +150,59 @@ li {
     display: none;
   }
 }
-.swiper-container {
-  padding: 16px 20px 24px 20px;
-  border-radius: 20px;
-  background: rgba(234, 247, 251, 0.8);
-  width: 100%;
+.swiper {
+  min-width: 100%;
+  overflow: hidden;
+}
+.swiper-wrapper {
+  position: relative;
   margin-top: 40px;
-  @include breakpoint(tablet) {
-    width: 40%;
-  }
   @include breakpoint(pc) {
     padding: 7.4rem 3rem;
-    height: 50remgit push origin main;
   }
 }
 .swiper-slide {
-  gap: 30px;
+  padding: 16px 30px 24px 30px;
+  border-radius: 20px;
+  background: rgba(234, 247, 251, 0.8);
+  min-height: 200px;
+  box-sizing: border-box;
+  display: flex;
+  @include breakpoint(tablet) {
+    padding: 30px 40px;
+    min-height: 300px;
+  }
+  @include breakpoint(pc) {
+    padding: 7.5rem 4rem;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 60%;
+  width: 20px;
+  height: 20px;
+  color: transparent;
+  border-radius: 1px;
+  background-color: blue;
+  @include breakpoint(pc) {
+    top: -65%;
+    width: 3rem;
+    height: 4rem;
+    color: transparent;
+    border-radius: 1px;
+    background-color: blue;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+}
+.swiper-button-next::after {
+  right: -30%;
+  clip-path: polygon(0 0, 70% 50%, 0 100%);
+}
+.swiper-button-prev::after {
+  left: -40%;
+  clip-path: polygon(0 0, 70% 50%, 0 100%);
+  transform: rotate(180deg);
 }

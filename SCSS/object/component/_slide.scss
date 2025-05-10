@@ -3,12 +3,21 @@
 @use "../../global/color" as *;
 .c-slide {
   &__img {
-    width: 100px;
+    flex-shrink: 0;
+    width: 100px; /* 画像のサイズを調整 */
+    overflow: hidden;
     @include breakpoint(tablet) {
       width: 250px;
+      margin: 0 auto;
     }
     @include breakpoint(pc) {
-      width: 100%;
+      width: 35rem;
+    }
+  }
+  &__contents {
+    flex: 1;
+    @include breakpoint(pc) {
+      margin-left: 50px;
     }
   }
   &__name {

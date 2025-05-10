@@ -50,6 +50,10 @@
       <!-- 検索エンジンにクロールさせる -->
       <meta name="robots" content="index, follow" />
       <link rel="stylesheet" href="/CSS/style.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
     </head>
     <body>
       <header class="l-header c-wrapper__header u-flex__between-center">
@@ -315,10 +319,11 @@
           <div class="c-wrapper__work">
             <h2 class="c-title">卒業生の声・実績</h2>
             <!-- /.c-title -->
-            <div class="swiper-container">
-              <div class="swiper js-work-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide u-flex__row-column">
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="c-slide u-flex__row-column">
                     <div class="c-slide__img">
                       <img
                         class="no-sp"
@@ -331,7 +336,7 @@
                         alt="スライドスマホ画像"
                       />
                     </div>
-                    <div class="c-slide">
+                    <div class="c-slide__contents">
                       <p class="c-slide__name">Aさん</p>
                       <h4 class="c-slide__title">Webデザイン課題</h4>
                       <ul class="c-slide__cat u-flex__start-wrap">
@@ -343,7 +348,57 @@
                         <!-- /.p-works__cat-list -->
                       </ul>
                     </div>
-                    <!-- /.p-works -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="c-slide u-flex__row-column">
+                    <div class="c-slide__img">
+                      <img
+                        class="no-sp"
+                        src="/img/slide-img.png"
+                        alt="スライドPC画像"
+                      />
+                      <img
+                        class="no-tablet-pc"
+                        src="/img/sumaho_ps 1.png"
+                        alt="スライドスマホ画像"
+                      />
+                    </div>
+                    <div class="c-slide__contents">
+                      <p class="c-slide__name">Bさん</p>
+                      <h4 class="c-slide__title">WordPress課題</h4>
+                      <ul class="c-slide__cat u-flex__start-wrap">
+                        <li class="c-slide__cat-list">WordPress</li>
+                        <li class="c-slide__cat-list">Git</li>
+                        <li class="c-slide__cat-list">HTML</li>
+                        <li class="c-slide__cat-list">CSS</li>
+                        <!-- /.p-works__cat-list -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="c-slide u-flex__row-column">
+                    <div class="c-slide__img">
+                      <img
+                        class="no-sp"
+                        src="/img/slide-img.png"
+                        alt="スライドPC画像"
+                      />
+                      <img
+                        class="no-tablet-pc"
+                        src="/img/sumaho_ps 1.png"
+                        alt="スライドスマホ画像"
+                      />
+                    </div>
+                    <div class="c-slide__contents">
+                      <p class="c-slide__name">Cさん</p>
+                      <h4 class="c-slide__title">Java課題</h4>
+                      <ul class="c-slide__cat u-flex__start-wrap">
+                        <li class="c-slide__cat-list">Java</li>
+                        <!-- /.p-works__cat-list -->
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -353,8 +408,64 @@
           </div>
         </section>
         <!-- /.p-work -->
+        <section class="p-faq">
+          <div class="c-wrapper__faq">
+            <h2 class="c-title">よくある質問</h2>
+            <!-- /.c-title -->
+            <dl class="c-ac js-ac">
+              <dt class="c-ac__title u-flex__center js-ac-title">
+                <p class="c-ac__title-text">
+                  全然プログラミングやったことないけど大丈夫?
+                </p>
+                <span class="c-ac__icon"></span>
+              </dt>
+              <!-- /.c-ac__border -->
+              <dd class="c-ac__text">テキストテストテキスト</dd>
+            </dl>
+            <!-- /.c-ac -->
+            <dl class="c-ac js-ac">
+              <dt class="c-ac__title u-flex__center js-ac-title">
+                <p class="c-ac__title-text">年齢制限とかありますか</p>
+                <span class="c-ac__icon"></span>
+              </dt>
+              <!-- /.c-ac__border -->
+              <dd class="c-ac__text">テキストテストテキスト</dd>
+            </dl>
+            <!-- /.c-ac -->
+            <dl class="c-ac js-ac">
+              <dt class="c-ac__title u-flex__center js-ac-title">
+                <p class="c-ac__title-text">途中で辞めたくなった場合は？</p>
+                <span class="c-ac__icon"></span>
+              </dt>
+              <!-- /.c-ac__border -->
+              <dd class="c-ac__text">テキストテストテキスト</dd>
+            </dl>
+            <!-- /.c-ac -->
+            <dl class="c-ac js-ac">
+              <dt class="c-ac__title u-flex__center js-ac-title">
+                <p class="c-ac__title-text">パソコンが苦手なのですが？</p>
+                <span class="c-ac__icon"></span>
+              </dt>
+              <!-- /.c-ac__border -->
+              <dd class="c-ac__text">テキストテストテキスト</dd>
+            </dl>
+            <!-- /.c-ac -->
+            <dl class="c-ac js-ac">
+              <dt class="c-ac__title u-flex__center js-ac-title">
+                <p class="c-ac__title-text">全くの初心者でも大丈夫ですか？</p>
+                <span class="c-ac__icon"></span>
+              </dt>
+              <!-- /.c-ac__border -->
+              <dd class="c-ac__text">テキストテストテキスト</dd>
+            </dl>
+            <!-- /.c-ac -->
+          </div>
+          <!-- /.c-wrapper__faq -->
+        </section>
+        <!-- /.p-faq -->
       </main>
-      <footer></footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/js/main.js" defer></script>
     </body>
   </html>
 </html>

@@ -69,7 +69,7 @@
   }
   &__row-column {
     @extend .u-flex;
-    justify-content: row;
+    flex-direction: row;
     @include breakpoint(tablet) {
       flex-direction: column;
     }
