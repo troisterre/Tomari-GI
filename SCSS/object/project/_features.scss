@@ -1,0 +1,11 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.p-features {
+  @include breakpoint(tablet) {
+    padding-top: 500px;
+  }
+  @include breakpoint(pc) {
+    padding-top: 900px;
+  }
+}

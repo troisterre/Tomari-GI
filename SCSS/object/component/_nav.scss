@@ -1,0 +1,11 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.c-nav {
+  &__list {
+    gap: 2rem;
+  }
+  &__item {
+    font-size: 1.8rem;
+  }
+}

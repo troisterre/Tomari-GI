@@ -1,0 +1,92 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.c-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: $color-white;
+  border-radius: 100px;
+  background: $color-pink;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  &__icon {
+    position: relative;
+    display: block;
+    background-color: $color-white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    @include breakpoint(tablet) {
+      width: 30px;
+      height: 30px;
+    }
+    @include breakpoint(pc) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 20px;
+    }
+  }
+  &__icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid $color-pink;
+    @include breakpoint(pc) {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 16px solid $color-pink;
+    }
+  }
+  &__mv {
+    @extend .c-button;
+    width: 300px;
+    height: 50px;
+    padding: 10px 10px 10px 0px;
+    margin: 30px auto 50px auto;
+    @include breakpoint(tablet) {
+      width: 500px;
+      height: 60px;
+      margin: 20px auto;
+    }
+    @include breakpoint(pc) {
+      width: 820px;
+      height: 80px;
+      margin: 40px auto;
+    }
+  }
+  &__link {
+    @include breakpoint(tablet) {
+      font-size: 24px;
+    }
+    @include breakpoint(pc) {
+      font-size: 40px;
+    }
+  }
+  &__flow {
+    @extend .c-button;
+    width: 300px;
+    height: 50px;
+    padding: 10px 10px 10px 0px;
+    margin: 30px auto 0 auto;
+    @include breakpoint(tablet) {
+      width: 500px;
+      height: 60px;
+      margin: 40px auto;
+    }
+    @include breakpoint(pc) {
+      width: 820px;
+      height: 80px;
+      margin: 74px auto 0;
+    }
+  }
+}

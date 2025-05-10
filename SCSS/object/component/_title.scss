@@ -1,0 +1,14 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.c-title {
+  font-size: 24px;
+  line-height: 1.7;
+  text-align: center;
+  @include breakpoint(tablet) {
+    font-size: 30px;
+  }
+  @include breakpoint(pc) {
+    font-size: 40px;
+  }
+}

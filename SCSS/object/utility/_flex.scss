@@ -1,0 +1,77 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+.u-flex {
+  display: flex;
+  &__column {
+    justify-content: column;
+  }
+  &__start-wrap {
+    @extend .u-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  &__between-center {
+    @extend .u-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__center {
+    @extend .u-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__column-between {
+    @extend .u-flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__column-row {
+    @extend .u-flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+    }
+  }
+  &__column-row-rev {
+    @extend .u-flex__column-row;
+    @include breakpoint(tablet) {
+      flex-direction: row-reverse;
+    }
+  }
+  &__column-rowBetween {
+    @extend .u-flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__column-wrap {
+    @extend .u-flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__row-start {
+    @extend .u-flex;
+    justify-content: flex-start;
+    align-items: first baseline;
+  }
+  &__row-column {
+    @extend .u-flex;
+    justify-content: row;
+    @include breakpoint(tablet) {
+      flex-direction: column;
+    }
+  }
+}

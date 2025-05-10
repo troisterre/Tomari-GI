@@ -1,0 +1,36 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+.c-wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+  &__header {
+    padding: 0 20px;
+  }
+  &__mainvisual {
+    padding: 72px 24px 0 24px;
+    padding: 0;
+    @include breakpoint(tablet) {
+      padding: 72px 24px 0 24px;
+    }
+  }
+  &__features {
+    margin: 100px 28px;
+    @include breakpoint(pc) {
+      margin: 65px 55px 0;
+    }
+  }
+  &__course {
+    margin: 60px auto 0;
+    padding: 0 30px;
+  }
+  &__flow {
+    @extend .c-wrapper;
+    padding: 0 30px;
+    margin: 60px auto;
+  }
+  &__work {
+    @extend .c-wrapper;
+    margin: 60px auto;
+    padding: 0 40px;
+  }
+}

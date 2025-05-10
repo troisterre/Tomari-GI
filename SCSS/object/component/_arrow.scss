@@ -1,0 +1,45 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.c-arrow {
+  line-height: 1;
+  position: relative;
+  background: $color-right-blown;
+  margin: 10px 0 10px;
+  @include breakpoint(tablet) {
+    margin: 20px 0 20px;
+  }
+  &::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 4px solid $color-right-blown;
+    position: absolute;
+    box-sizing: border-box;
+    @include breakpoint(tablet) {
+      width: 20px;
+      height: 20px;
+      border: 6px solid $color-right-blown;
+    }
+  }
+}
+.c-arrow.-bottom {
+  width: 4px;
+  height: 20px;
+  left: 50%;
+  @include breakpoint(tablet) {
+    width: 8px;
+    height: 30px;
+  }
+}
+.c-arrow.-bottom::before {
+  border-right: 0;
+  border-top: 0;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  bottom: -7%;
+  left: 50%;
+  @include breakpoint(tablet) {
+    bottom: -10%;
+  }
+}

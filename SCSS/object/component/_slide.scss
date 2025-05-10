@@ -1,0 +1,51 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.c-slide {
+  &__img {
+    width: 100px;
+    @include breakpoint(tablet) {
+      width: 250px;
+    }
+    @include breakpoint(pc) {
+      width: 100%;
+    }
+  }
+  &__name {
+    font-size: 16px;
+    @include breakpoint(tablet) {
+      font-size: 18px;
+    }
+    @include breakpoint(pc) {
+      font-size: 2.4rem;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 1.7;
+    @include breakpoint(tablet) {
+      font-size: 20px;
+    }
+    @include breakpoint(pc) {
+      font-size: 3rem;
+    }
+  }
+  &__cat {
+    gap: 10px;
+    margin-top: 8px;
+  }
+  &__cat-list {
+    font-size: 10px;
+    font-family: serif;
+    display: flex;
+    border: 1px solid $color-navy;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    @include breakpoint(pc) {
+      font-size: 1.4rem;
+      padding: 0.5rem;
+    }
+  }
+}

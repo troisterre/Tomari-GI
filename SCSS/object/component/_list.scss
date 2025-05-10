@@ -1,0 +1,38 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.c-list {
+  &__flow {
+    margin: 30px 0 0 0;
+
+    @include breakpoint(tablet) {
+      margin: 44px 0 0 0;
+    }
+    @include breakpoint(pc) {
+      margin: 50px 0 0 0;
+    }
+  }
+  &__item-flow {
+    width: 100%;
+    border-radius: 20px;
+    background: #fff;
+    flex-shrink: 0;
+    padding: 7px 22px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    @include breakpoint(tablet) {
+      padding: 19px 22px;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 1.7;
+    }
+    @include breakpoint(pc) {
+      width: 51.2%;
+      font-size: 35px;
+    }
+  }
+  &__no {
+    margin-right: 10px;
+  }
+}
