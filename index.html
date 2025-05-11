@@ -61,22 +61,22 @@
         <nav class="l-header__nav c-nav no-sp">
           <ul class="c-nav__list u-flex__center">
             <li class="c-nav__item">
-              <a class="c-nav__link" href="#">教室の特徴</a>
+              <a class="c-nav__link" href="#features">教室の特徴</a>
             </li>
             <li class="c-nav__item">
-              <a class="c-nav__link" href="#">学べる内容</a>
+              <a class="c-nav__link" href="#course">学べる内容</a>
             </li>
             <li class="c-nav__item">
-              <a class="c-nav__link" href="#">受講までの流れ</a>
+              <a class="c-nav__link" href="#flow">受講までの流れ</a>
             </li>
             <li class="c-nav__item">
-              <a class="c-nav__link" href="#">卒業生の声・実績</a>
+              <a class="c-nav__link" href="#work">卒業生の声・実績</a>
             </li>
             <li class="c-nav__item">
-              <a class="c-nav__link" href="#">よくある質問</a>
+              <a class="c-nav__link" href="#faq">よくある質問</a>
             </li>
             <li class="c-nav__item">
-              <a class="c-nav__link" href="#">お問い合わせ</a>
+              <a class="c-nav__link" href="#contact">お問い合わせ</a>
             </li>
             <!-- /.c-nav__list -->
           </ul>
@@ -118,7 +118,7 @@
           <!-- /.p-mainvisual__img-sp -->
         </div>
         <!-- /.p-mainvusial -->
-        <section class="p-features">
+        <section id="features" class="p-features">
           <div class="c-wrapper__features">
             <h2 class="c-title">TomariーGIってどんなとこ</h2>
             <div class="c-media__features u-flex__column-between">
@@ -187,7 +187,7 @@
           </div>
         </section>
         <!-- /.p-features -->
-        <section class="p-course">
+        <section id="course" class="p-course">
           <div class="c-wrapper__course">
             <h2 class="c-title">学べる内容</h2>
             <!-- /.c-title__course -->
@@ -276,7 +276,7 @@
           <!-- /.c-wrapper__course -->
         </section>
         <!-- /.p-course -->
-        <section class="p-flow">
+        <section id="flow" class="p-flow">
           <div class="c-wrapper__flow">
             <h2 class="c-title">受講までの流れ</h2>
             <!-- /.c-title -->
@@ -315,7 +315,7 @@
           <!-- /.c-wrapper__flow -->
         </section>
         <!-- /.p-flow -->
-        <section class="p-work">
+        <section id="work" class="p-work">
           <div class="c-wrapper__work">
             <h2 class="c-title">卒業生の声・実績</h2>
             <!-- /.c-title -->
@@ -408,7 +408,7 @@
           </div>
         </section>
         <!-- /.p-work -->
-        <section class="p-faq">
+        <section id="faq" class="p-faq">
           <div class="c-wrapper__faq">
             <h2 class="c-title">よくある質問</h2>
             <!-- /.c-title -->
@@ -459,10 +459,91 @@
               <dd class="c-ac__text">テキストテストテキスト</dd>
             </dl>
             <!-- /.c-ac -->
+            <button class="c-button__faq" type="submit">
+              <a class="c-button__link u-flex__center" href="#"
+                ><span class="c-button__icon"></span
+                ><span class="c-button__text-faq"
+                  >もし不安なことがありましたら<br />お気軽にお問い合わせください！</span
+                ></a
+              >
+            </button>
           </div>
           <!-- /.c-wrapper__faq -->
         </section>
         <!-- /.p-faq -->
+        <section class="l-about c-about c-wrapper__about">
+          <div class="p-about__content u-flex__column-reverse">
+            <div
+              class="p-about__media p-about__media-intro u-flex__column-center"
+            >
+              <img
+                class="p-about__img"
+                src="/img/Takasan _img.svg"
+                alt="自己紹介画像"
+              />
+              <p class="p-about__desc">
+                プログラミング未経験でも安心して学べる環境を提供しています。
+              </p>
+            </div>
+
+            <div class="p-about__media p-about__media-map u-flex__column">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6478.000300641519!2d139.53218715631192!3d35.72621482749983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ef5cbb220659%3A0xb595ac84c03f9029!2z44CSMTg4LTAwMTIg5p2x5Lqs6YO96KW_5p2x5Lqs5biC5Y2X55S677yV5LiB55uu77yT4oiS77yVIOOCteOCpuOCueOCv-OCpuODsyAyMDE!5e0!3m2!1sja!2sjp!4v1746928166835!5m2!1sja!2sjp"
+                class="c-map"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="p-about__text">
+                <h3 class="p-about__heading--sub">アクセスマップ</h3>
+                <div class="p-about__info">
+                  <dl class="p-about__info-contents u-flex__start">
+                    <dt class="p-about__info-title">住 所</dt>
+                    <!-- /.p-abput__address-title -->
+                    <dd class="p-about__info-text">
+                      〒188-0012 東京都西東京市南町５丁目３−５<br
+                        class="no-sp"
+                      />
+                      サウスタウン 201
+                    </dd>
+                  </dl>
+                  <!-- /.p-about__address -->
+                  <dl class="p-about__info-contents u-flex__start">
+                    <dt class="p-about__info-title">email</dt>
+                    <!-- /.p-about__email-title -->
+                    <dd class="p-about__info-text">
+                      <a href="mailto:info@example.com">info@example.com</a>
+                    </dd>
+                  </dl>
+                  <!-- /.p-about__email -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="p-contact c-wrapper__contact">
+          <h2 class="c-title">まずは無料モニターで<br />やってみよう！</h2>
+
+          <form action="#" method="post" class="p-contact__form">
+            <label class="p-contact__checkbox u-flex__center">
+              <input type="checkbox" required />
+              <span class="p-contact__label">
+                <a href="#" target="_blank" class="c-link"
+                  >プライバシーポリシー</a
+                >に同意する
+              </span>
+            </label>
+            <button class="c-button__contact" type="submit">
+              <a class="c-button__link u-flex__center" href="#"
+                ><span class="c-button__icon"></span
+                ><span class="c-button__text"
+                  >期間限定：無料モニター募集中！</span
+                ></a
+              >
+            </button>
+          </form>
+        </section>
       </main>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="/js/main.js" defer></script>

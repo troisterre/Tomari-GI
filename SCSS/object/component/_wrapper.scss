@@ -8,7 +8,6 @@
   }
   &__mainvisual {
     padding: 72px 24px 0 24px;
-    padding: 0;
     @include breakpoint(tablet) {
       padding: 72px 24px 0 24px;
     }
@@ -34,5 +33,13 @@
   }
   &__faq {
     @extend .c-wrapper;
+    margin: 0 auto 60px auto;
+  }
+  &__about {
+    @extend .c-wrapper;
+  }
+  &__contact {
+    @extend .c-wrapper;
+    padding: 0 30px 60px 30px;
   }
 }

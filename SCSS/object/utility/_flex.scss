@@ -3,7 +3,7 @@
 .u-flex {
   display: flex;
   &__column {
-    justify-content: column;
+    flex-direction: column;
   }
   &__start-wrap {
     @extend .u-flex;
@@ -73,5 +73,34 @@
     @include breakpoint(tablet) {
       flex-direction: column;
     }
+  }
+  &__column-reverse {
+    @extend .u-flex;
+    flex-direction: column;
+    @include breakpoint(tablet) {
+      flex-direction: column;
+    }
+    @include breakpoint(pc) {
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+  }
+  &__column-center {
+    @extend .u-flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(tablet) {
+      @extend .u-flex;
+      flex-direction: row;
+      align-items: start;
+    }
+    @include breakpoint(pc) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__start {
+    @extend .u-flex;
+    justify-content: flex-start;
   }
 }

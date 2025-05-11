@@ -1,0 +1,82 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.p-about {
+  &__content {
+    gap: 20px;
+    background: linear-gradient(145deg, rgba(255, 239, 219, 0.7), rgba(255, 214, 165, 0.5));
+    border-radius: 20px;
+    padding: 20px 10px;
+    margin: 0 0 60px 0;
+    @include breakpoint(tablet) {
+      gap: 50px;
+    }
+    @include breakpoint(pc) {
+      gap: 2rem;
+      width: 85%;
+      padding: 3rem 2rem;
+      margin: 0 auto;
+    }
+  }
+  &__media-intro {
+    max-width: 100%;
+    gap: 15px;
+    @include breakpoint(pc) {
+      width: 43%;
+    }
+  }
+  &__img {
+    width: 150px;
+    height: 150px;
+    @include breakpoint(pc) {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+  &__media-map {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    @include breakpoint(tablet) {
+      padding: 0 50px;
+    }
+    @include breakpoint(pc) {
+      width: 50%;
+    }
+  }
+  &__desc {
+    background-color: $color-pink;
+    @include breakpoint(pc) {
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+  }
+  &__text {
+    margin: 15px 0 0 0;
+    font-size: 14px;
+    line-height: 1.25;
+    @include breakpoint(tablet) {
+      font-size: 20px;
+      margin: 30px 0 0 0;
+    }
+  }
+  &__heading--sub {
+    margin: 0 0 15px 0;
+  }
+  &__info-contents {
+    gap: 10px;
+    margin-bottom: 15px;
+    @include breakpoint(tablet) {
+      gap: 50px;
+    }
+  }
+  &__info-contents:last-of-type {
+    margin-bottom: 0;
+  }
+  &__info-title {
+    width: 60px;
+  }
+  &__info-text {
+    flex: 1;
+  }
+}

@@ -1,0 +1,17 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.p-contact {
+  &__checkbox {
+    gap: 0.5rem;
+    margin: 30px 0;
+    input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      accent-color: #007bff;
+      border: 1px solid $color-right-blown;
+      margin: 0 10px 0;
+      border-radius: 5px;
+    }
+  }
+}

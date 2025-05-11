@@ -89,4 +89,33 @@
       margin: 74px auto 0;
     }
   }
+  &__faq,
+  &__contact {
+    @extend .c-button;
+    width: 300px;
+    height: 50px;
+    padding: 10px 10px 10px 0;
+    margin: 30px auto 0 auto;
+    @include breakpoint(tablet) {
+      width: 500px;
+      height: 60px;
+      margin: 40px auto;
+    }
+    @include breakpoint(pc) {
+      width: 820px;
+      height: 80px;
+      margin: 74px auto 0;
+    }
+  }
+  &__text-faq {
+    font-size: 16px;
+    text-decoration: none;
+    @include breakpoint(tablet) {
+      font-size: 20px;
+    }
+    @include breakpoint(pc) {
+      font-size: 2.4rem;
+      line-height: 1.2;
+    }
+  }
 }

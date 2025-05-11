@@ -1,0 +1,7 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.c-link {
+  color: blue;
+  text-decoration: underline;
+}
