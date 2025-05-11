@@ -49,7 +49,6 @@
     }
   }
   &__desc {
-    background-color: $color-pink;
     @include breakpoint(pc) {
       font-size: 2rem;
       line-height: 1.25;

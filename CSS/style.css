@@ -268,6 +268,18 @@ li {
   transform: rotate(180deg);
 }
 
+input[type=checkbox] {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  width: 15px;
+  height: 15px;
+  accent-color: #007bff;
+  border: 1px solid #996644;
+  margin: 0 10px 0;
+  border-radius: 5px;
+}
+
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -734,7 +746,7 @@ th {
 }
 @media (min-width: 960px) {
   .p-mainvisual__contents {
-    max-width: 1366px;
+    max-width: 1160px;
     width: 85%;
     min-height: 543px;
     padding: 5rem 6.6rem 4rem 6.6rem;
@@ -843,6 +855,9 @@ th {
   width: 100%;
 }
 
+.p-features {
+  scroll-margin-top: 80px;
+}
 @media (min-width: 560px) {
   .p-features {
     padding-top: 500px;
@@ -908,12 +923,8 @@ th {
 }
 @media (min-width: 960px) {
   .p-about__media-map {
-    width: 40%;
     max-width: none;
   }
-}
-.p-about__desc {
-  background-color: #f78da7;
 }
 @media (min-width: 960px) {
   .p-about__desc {
@@ -954,17 +965,40 @@ th {
   flex: 1;
 }
 
+.p-contact {
+  scroll-margin-top: 80px;
+}
 .p-contact__checkbox {
   gap: 0.5rem;
-  margin: 30px 0;
+  margin: 10px 0;
 }
-.p-contact__checkbox input[type=checkbox] {
-  width: 15px;
-  height: 15px;
-  accent-color: #007bff;
-  border: 1px solid #996644;
-  margin: 0 10px 0;
-  border-radius: 5px;
+
+.p-course {
+  scroll-margin-top: 80px;
+}
+
+.p-flow {
+  scroll-margin-top: 80px;
+}
+
+.p-work {
+  scroll-margin-top: 80px;
+}
+
+.p-faq {
+  scroll-margin-top: 80px;
+}
+
+.p-fadein {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.p-fadein.is-show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .c-wrapper, .c-wrapper__contact, .c-wrapper__about, .c-wrapper__faq, .c-wrapper__work, .c-wrapper__flow, .c-wrapper__course {
@@ -984,7 +1018,7 @@ th {
   }
 }
 .c-wrapper__features {
-  margin: 100px 28px;
+  margin: 60px 28px;
 }
 @media (min-width: 960px) {
   .c-wrapper__features {
@@ -1007,6 +1041,11 @@ th {
 }
 .c-wrapper__contact {
   padding: 0 30px 60px 30px;
+}
+@media (min-width: 960px) {
+  .c-wrapper__contact {
+    margin-top: 60px;
+  }
 }
 
 .c-hamburger {
@@ -1051,29 +1090,40 @@ th {
   transform: rotate(-45deg);
   bottom: 9px;
 }
-.c-hamburger__nav {
+
+.c-hamburger-nav {
   position: fixed;
-  top: 60px;
-  right: -50%;
   background: #f5f5f5;
-  transition: 5s;
-  padding: 100px 20px;
-  z-index: 6000;
+  z-index: 4000;
+  overflow: hidden;
+  max-height: 0;
+  background-color: #fff;
+  transition: max-height 0.5s ease;
+  left: 0;
+  width: 70%;
+  padding: 50px 0 0 0;
 }
 @media (min-width: 960px) {
-  .c-hamburger__nav {
+  .c-hamburger-nav {
     display: none;
   }
 }
-.c-hamburger__nav.active {
-  width: 100%;
-  max-height: 100vh;
+.c-hamburger-nav__list {
+  padding: 30px 20px;
 }
-.c-hamburger__list {
+.c-hamburger-nav__item {
   margin-bottom: 20px;
+  cursor: pointer;
 }
-.c-hamburger__list a {
+.c-hamburger-nav__item a {
   font-size: 20px;
+}
+.c-hamburger-nav__item:hover {
+  opacity: 0.8;
+}
+
+.c-hamburger-nav.is-open {
+  max-height: 800px;
 }
 
 .c-button, .c-button__faq, .c-button__contact, .c-button__flow, .c-button__mv {
@@ -1152,17 +1202,17 @@ th {
   }
 }
 @media (min-width: 560px) {
-  .c-button__link {
+  .c-button__text {
     font-size: 24px;
   }
 }
 @media (min-width: 960px) {
-  .c-button__link {
+  .c-button__text {
     font-size: 36px;
   }
 }
 @media (min-width: 1260px) {
-  .c-button__link {
+  .c-button__text {
     font-size: 40px;
   }
 }
@@ -1203,7 +1253,7 @@ th {
   .c-button__faq, .c-button__contact {
     width: 820px;
     height: 80px;
-    margin: 74px auto 0;
+    margin: 30px auto 0;
   }
 }
 .c-button__text-faq {
@@ -1247,7 +1297,7 @@ th {
 .c-media__features {
   margin-top: 27px;
   gap: 25px;
-  background: linear-gradient(145deg, rgba(255, 239, 219, 0.7), rgba 255, 214, 165, 0.5);
+  background: linear-gradient(145deg, rgba(255, 239, 219, 0.7), rgba(255, 214, 165, 0.5));
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   border-radius: 20px;
@@ -1458,6 +1508,7 @@ th {
 
 .c-list__flow {
   margin: 30px 0 0 0;
+  max-width: 1160px;
 }
 @media (min-width: 560px) {
   .c-list__flow {
@@ -1489,7 +1540,6 @@ th {
 }
 @media (min-width: 960px) {
   .c-list__item-flow {
-    width: 51.2%;
     font-size: 35px;
   }
 }
@@ -1744,10 +1794,11 @@ th {
   word-break: break-word;
 }
 .c-ac__text {
+  overflow: hidden;
+  max-height: 0;
   border-top: 1px solid #996644;
-  padding: 10px 30px;
-  display: none;
-  animation: fadeIn 0.5s ease forwards;
+  padding: 0 30px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
   position: relative;
   font-size: 16px;
   line-height: 1.3;
@@ -1755,25 +1806,25 @@ th {
 @media (min-width: 560px) {
   .c-ac__text {
     font-size: 20px;
-    padding: 20px 40px;
+    padding: 0 40px;
   }
 }
 @media (min-width: 960px) {
   .c-ac__text {
     font-size: 2.4rem;
-    padding: 2rem 4rem;
+    padding: 0 4rem;
   }
 }
 .c-ac__text::before {
   content: "A: ";
   position: absolute;
   left: 0;
-  top: 25%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 @media (min-width: 560px) {
   .c-ac__text::before {
     font-size: 20px;
-    top: 30%;
   }
 }
 @media (min-width: 960px) {
@@ -1794,7 +1845,18 @@ th {
 
 /* 開いたときだけ表示 */
 .js-ac.active .c-ac__text {
-  display: block;
+  max-height: 1000px;
+  padding: 10px 30px;
+}
+@media (min-width: 560px) {
+  .js-ac.active .c-ac__text {
+    padding: 20px 40px;
+  }
+}
+@media (min-width: 960px) {
+  .js-ac.active .c-ac__text {
+    padding: 2rem 4rem;
+  }
 }
 
 @keyframes fadeIn {

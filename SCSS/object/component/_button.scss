@@ -66,7 +66,7 @@
       margin: 40px auto;
     }
   }
-  &__link {
+  &__text {
     @include breakpoint(tablet) {
       font-size: 24px;
     }
@@ -109,7 +109,7 @@
     @include breakpoint(pc) {
       width: 820px;
       height: 80px;
-      margin: 74px auto 0;
+      margin: 30px auto 0;
     }
   }
   &__text-faq {

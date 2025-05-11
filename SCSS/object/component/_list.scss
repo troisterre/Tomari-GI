@@ -4,7 +4,7 @@
 .c-list {
   &__flow {
     margin: 30px 0 0 0;
-
+    max-width: 1160px;
     @include breakpoint(tablet) {
       margin: 44px 0 0 0;
     }
@@ -28,7 +28,6 @@
       line-height: 1.7;
     }
     @include breakpoint(pc) {
-      width: 51.2%;
       font-size: 35px;
     }
   }

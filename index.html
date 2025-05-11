@@ -89,7 +89,27 @@
         <!-- /.l-header__title -->
       </header>
       <!-- /.l-header -->
-
+      <nav class="c-hamburger-nav js-nav">
+        <ul class="c-hamburger-nav__list">
+          <li class="c-hamburger-nav__item">
+            <a href="#features">教室の特徴</a>
+          </li>
+          <li class="c-hamburger-nav__item">
+            <a href="#course">学べる内容</a>
+          </li>
+          <li class="c-hamburger-nav__item">
+            <a href="#flow">受講までの流れ</a>
+          </li>
+          <li class="c-hamburger-nav__item">
+            <a href="#work">卒業生の声・実績</a>
+          </li>
+          <li class="c-hamburger-nav__item"><a href="#faq">よくある質問</a></li>
+          <li class="c-hamburger-nav__item">
+            <a href="#contact">お問い合わせ</a>
+          </li>
+          <!-- /.c-hamburger__nav-item -->
+        </ul>
+      </nav>
       <main class="l-main">
         <div class="p-mainvisual c-wrapper__mainvisual">
           <div class="p-mainvisual__contents">
@@ -118,7 +138,7 @@
           <!-- /.p-mainvisual__img-sp -->
         </div>
         <!-- /.p-mainvusial -->
-        <section id="features" class="p-features">
+        <section id="features" class="p-features p-fadein">
           <div class="c-wrapper__features">
             <h2 class="c-title">TomariーGIってどんなとこ</h2>
             <div class="c-media__features u-flex__column-between">
@@ -187,7 +207,7 @@
           </div>
         </section>
         <!-- /.p-features -->
-        <section id="course" class="p-course">
+        <section id="course" class="p-course p-fadein">
           <div class="c-wrapper__course">
             <h2 class="c-title">学べる内容</h2>
             <!-- /.c-title__course -->
@@ -276,7 +296,7 @@
           <!-- /.c-wrapper__course -->
         </section>
         <!-- /.p-course -->
-        <section id="flow" class="p-flow">
+        <section id="flow" class="p-flow p-fadein">
           <div class="c-wrapper__flow">
             <h2 class="c-title">受講までの流れ</h2>
             <!-- /.c-title -->
@@ -315,7 +335,7 @@
           <!-- /.c-wrapper__flow -->
         </section>
         <!-- /.p-flow -->
-        <section id="work" class="p-work">
+        <section id="work" class="p-work p-fadein">
           <div class="c-wrapper__work">
             <h2 class="c-title">卒業生の声・実績</h2>
             <!-- /.c-title -->
@@ -407,7 +427,7 @@
           </div>
         </section>
         <!-- /.p-work -->
-        <section id="faq" class="p-faq">
+        <section id="faq" class="p-faq p-fadein">
           <div class="c-wrapper__faq">
             <h2 class="c-title">よくある質問</h2>
             <!-- /.c-title -->
@@ -470,7 +490,7 @@
           <!-- /.c-wrapper__faq -->
         </section>
         <!-- /.p-faq -->
-        <section class="l-about c-about c-wrapper__about">
+        <section class="l-about c-about c-wrapper__about p-fadein">
           <div class="p-about__content u-flex__column-reverse">
             <div
               class="p-about__media p-about__media-intro u-flex__column-center"
@@ -521,24 +541,30 @@
             </div>
           </div>
         </section>
-        <section id="contact" class="p-contact c-wrapper__contact">
+        <section id="contact" class="p-contact c-wrapper__contact p-fadein">
           <h2 class="c-title">まずは無料モニターで<br />やってみよう！</h2>
 
           <form action="#" method="post" class="p-contact__form">
-            <label class="p-contact__checkbox u-flex__center">
-              <input type="checkbox" required />
-              <span class="p-contact__label">
-                <a href="#" target="_blank" class="c-link"
-                  >プライバシーポリシー</a
-                >に同意する
-              </span>
-            </label>
-            <button class="c-button__contact" type="submit">
-              <a class="c-button__link u-flex__center" href="#"
-                ><span class="c-button__icon"></span
-                ><span class="c-button__text"
-                  >期間限定：無料モニター募集中！</span
-                ></a
+            <div class="p-contact__check u-flex__center">
+              <input type="checkbox" id="agree" required />
+              <label for="agree" class="p-contact__checkbox">
+                <span class="p-contact__label">
+                  <a href="privacy.html" target="_blank" class="c-link">
+                    プライバシーポリシー
+                  </a>
+                  に同意する
+                </span>
+              </label>
+            </div>
+            <!-- /.p-contact__check -->
+            <button
+              id="goForm"
+              class="c-button__contact u-flex__center"
+              type="button"
+            >
+              <span class="c-button__icon"></span
+              ><span class="c-button__text"
+                >期間限定：無料モニター募集中！</span
               >
             </button>
           </form>

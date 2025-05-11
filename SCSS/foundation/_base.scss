@@ -227,3 +227,13 @@ li {
   clip-path: polygon(0 0, 70% 50%, 0 100%);
   transform: rotate(180deg);
 }
+
+input[type="checkbox"] {
+  appearance: auto;
+  width: 15px;
+  height: 15px;
+  accent-color: #007bff;
+  border: 1px solid $color-right-blown;
+  margin: 0 10px 0;
+  border-radius: 5px;
+}

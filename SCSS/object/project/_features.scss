@@ -2,6 +2,7 @@
 @use "../../global/mixin" as *;
 @use "../../global/color" as *;
 .p-features {
+  scroll-margin-top: 80px;
   @include breakpoint(tablet) {
     padding-top: 500px;
   }

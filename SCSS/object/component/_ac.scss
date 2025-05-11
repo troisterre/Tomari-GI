@@ -101,30 +101,33 @@
     word-break: break-word;
   }
   &__text {
+    overflow: hidden;
+    max-height: 0;
     border-top: 1px solid $color-right-blown;
-    padding: 10px 30px;
-    display: none;
-    animation: fadeIn 0.5s ease forwards;
+    padding: 0 30px;
+    transition:
+      max-height 0.3s ease,
+      padding 0.3s ease;
     position: relative;
     font-size: 16px;
     line-height: 1.3;
     @include breakpoint(tablet) {
       font-size: 20px;
-      padding: 20px 40px;
+      padding: 0 40px;
     }
     @include breakpoint(pc) {
       font-size: 2.4rem;
-      padding: 2rem 4rem;
+      padding: 0 4rem;
     }
   }
   &__text::before {
     content: "A: ";
     position: absolute;
     left: 0;
-    top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
     @include breakpoint(tablet) {
       font-size: 20px;
-      top: 30%;
     }
     @include breakpoint(pc) {
       font-size: 2.4rem;
@@ -141,7 +144,14 @@
 }
 /* 開いたときだけ表示 */
 .js-ac.active .c-ac__text {
-  display: block;
+  max-height: 1000px;
+  padding: 10px 30px;
+  @include breakpoint(tablet) {
+    padding: 20px 40px;
+  }
+  @include breakpoint(pc) {
+    padding: 2rem 4rem;
+  }
 }
 
 @keyframes fadeIn {
