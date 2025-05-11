@@ -7,11 +7,13 @@
     background: linear-gradient(145deg, rgba(255, 239, 219, 0.7), rgba(255, 214, 165, 0.5));
     border-radius: 20px;
     padding: 20px 10px;
+
     margin: 0 0 60px 0;
     @include breakpoint(tablet) {
       gap: 50px;
     }
     @include breakpoint(pc) {
+      max-width: 1160px;
       gap: 2rem;
       width: 85%;
       padding: 3rem 2rem;
@@ -19,7 +21,6 @@
     }
   }
   &__media-intro {
-    max-width: 100%;
     gap: 15px;
     @include breakpoint(pc) {
       width: 43%;
@@ -35,13 +36,16 @@
   }
   &__media-map {
     max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
+    padding: 0;
     @include breakpoint(tablet) {
-      padding: 0 50px;
+      width: 100%;
+      max-width: 960px;
     }
     @include breakpoint(pc) {
-      width: 50%;
+      max-width: none;
     }
   }
   &__desc {

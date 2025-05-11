@@ -1,7 +1,9 @@
 $breakpoints: (
   sp: 0,
   tablet: 560px,
-  pc: 960px
+  tablet-l: 720px,
+  pc: 960px,
+  pc-l: 1260px
 );
 
 @mixin breakpoint($point) {

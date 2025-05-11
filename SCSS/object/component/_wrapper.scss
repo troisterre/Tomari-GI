@@ -3,6 +3,7 @@
 .c-wrapper {
   margin: 0 auto;
   padding: 0 30px;
+  max-width: 1160px;
   &__header {
     padding: 0 20px;
   }
@@ -15,7 +16,8 @@
   &__features {
     margin: 100px 28px;
     @include breakpoint(pc) {
-      margin: 65px 55px 0;
+      margin: 65px auto;
+      max-width: 1160px;
     }
   }
   &__course {

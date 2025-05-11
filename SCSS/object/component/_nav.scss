@@ -6,6 +6,15 @@
     gap: 2rem;
   }
   &__item {
-    font-size: 1.8rem;
+    font-size: 18px;
+    @include breakpoint(tablet) {
+      font-size: 16px;
+    }
+    @include breakpoint(pc) {
+      font-size: 16px;
+    }
+    @include breakpoint(pc-l) {
+      font-size: 24px;
+    }
   }
 }

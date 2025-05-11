@@ -31,8 +31,7 @@ html {
   -ms-text-size-adjust: 100%;
   scroll-behavior: smooth;
   @include breakpoint(tablet) {
-    font-size: 1vw;
-    line-height: 1.6;
+    font-size: calc(100vw / 768);
   }
   @include breakpoint(pc) {
     font-size: 62.5%;
@@ -132,6 +131,15 @@ li {
     display: block;
   }
 }
+.no-sp-tablet {
+  display: none;
+  @include breakpoint(tablet) {
+    display: none;
+  }
+  @include breakpoint(pc) {
+    display: block;
+  }
+}
 .no-tablet-pc {
   display: block;
   @include breakpoint(tablet) {
@@ -151,8 +159,16 @@ li {
   }
 }
 .swiper {
-  min-width: 100%;
+  width: 100%;
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 320px;
+  @include breakpoint(tablet) {
+    max-width: 650px;
+  }
+  @include breakpoint(pc) {
+    max-width: 1160px;
+  }
 }
 .swiper-wrapper {
   position: relative;
@@ -165,15 +181,20 @@ li {
   padding: 16px 30px 24px 30px;
   border-radius: 20px;
   background: rgba(234, 247, 251, 0.8);
-  min-height: 200px;
   box-sizing: border-box;
   display: flex;
+  width: 100%;
+  margin: 0 auto;
+  width: 320px;
   @include breakpoint(tablet) {
     padding: 30px 40px;
-    min-height: 300px;
+    min-height: 350px;
+    width: 400px;
   }
   @include breakpoint(pc) {
-    padding: 7.5rem 4rem;
+    padding: 5rem 3rem;
+    min-height: 500px;
+    width: 500px;
   }
 }
 .swiper-button-next::after,

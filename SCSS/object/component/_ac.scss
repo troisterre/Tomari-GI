@@ -24,6 +24,7 @@
   }
   &__title {
     cursor: pointer;
+    position: relative;
   }
   &__title-text {
     width: 260px;
@@ -71,12 +72,11 @@
     display: block;
     width: 2px;
     height: 20px;
-    right: 45rem;
+    right: 5%;
     transform: rotate(90deg);
     background-color: $color-blown;
     transition: 0.3s ease;
     @include breakpoint(tablet) {
-      right: 16%;
       width: 3px;
       height: 30px;
     }
@@ -87,11 +87,10 @@
     display: block;
     width: 2px;
     height: 20px;
-    right: 45rem;
+    right: 5%;
     background-color: $color-blown;
     transition: 0.8s ease;
     @include breakpoint(tablet) {
-      right: 16%;
       width: 3px;
       height: 30px;
     }

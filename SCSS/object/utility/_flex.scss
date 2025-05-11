@@ -4,6 +4,8 @@
   display: flex;
   &__column {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__start-wrap {
     @extend .u-flex;
@@ -83,6 +85,7 @@
     @include breakpoint(pc) {
       flex-direction: row-reverse;
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
   &__column-center {
