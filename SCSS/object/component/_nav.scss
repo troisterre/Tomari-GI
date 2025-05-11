@@ -18,3 +18,11 @@
     }
   }
 }
+.js-nav {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+.js-nav.is-open {
+  max-height: 500px; // 中の高さに合わせて調整
+}

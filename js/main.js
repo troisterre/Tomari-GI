@@ -68,6 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.remove("is-open");
   });
 });
+
+window.addEventListener("scroll", () => {
+  if (navMenu.classList.contains("is-open")) {
+    navMenu.classList.remove("is-open");
+    toggleBtn.classList.remove("active");
+  }
+});
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     const target = document.querySelector(link.getAttribute("href"));

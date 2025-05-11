@@ -1294,6 +1294,16 @@ th {
   }
 }
 
+.js-nav {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.js-nav.is-open {
+  max-height: 500px;
+}
+
 .c-media__features {
   margin-top: 27px;
   gap: 25px;
