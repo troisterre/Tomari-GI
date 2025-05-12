@@ -180,7 +180,8 @@ li {
 .swiper-slide {
   padding: 16px 30px 24px 30px;
   border-radius: 20px;
-  background: rgba(234, 247, 251, 0.8);
+  background: linear-gradient(135deg, #fee3ec, #fadce2);
+  backdrop-filter: blur(4px);
   box-sizing: border-box;
   display: flex;
   width: 100%;
@@ -226,6 +227,9 @@ li {
   left: -40%;
   clip-path: polygon(0 0, 70% 50%, 0 100%);
   transform: rotate(180deg);
+  @include breakpoint(pc) {
+    left: 100%;
+  }
 }
 
 input[type="checkbox"] {

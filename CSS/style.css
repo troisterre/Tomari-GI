@@ -207,7 +207,9 @@ li {
 .swiper-slide {
   padding: 16px 30px 24px 30px;
   border-radius: 20px;
-  background: rgba(234, 247, 251, 0.8);
+  background: linear-gradient(135deg, #fee3ec, #fadce2);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   box-sizing: border-box;
   display: flex;
   width: 100%;
@@ -266,6 +268,11 @@ li {
   -webkit-clip-path: polygon(0 0, 70% 50%, 0 100%);
           clip-path: polygon(0 0, 70% 50%, 0 100%);
   transform: rotate(180deg);
+}
+@media (min-width: 960px) {
+  .swiper-button-prev::after {
+    left: 100%;
+  }
 }
 
 input[type=checkbox] {
@@ -988,6 +995,48 @@ th {
 .p-faq {
   scroll-margin-top: 80px;
 }
+.p-faq__contact-message {
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  line-height: 1.8;
+}
+.p-faq__note {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 560px) {
+  .p-faq__note {
+    font-size: 20px;
+  }
+}
+@media (min-width: 960px) {
+  .p-faq__note {
+    font-size: 24px;
+  }
+}
+.p-faq__note a.c-link {
+  text-decoration: underline;
+  color: #e5738d;
+  font-weight: bold;
+}
+.p-faq__note a.c-link:hover {
+  text-decoration: none;
+  color: #d45c75;
+}
+.p-faq__mail-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f28aa0;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.p-faq__mail-button:hover {
+  background-color: #ec6c88;
+}
 
 .p-fadein {
   opacity: 0;
@@ -1393,7 +1442,7 @@ th {
 }
 .c-media__right-features {
   width: 100%;
-  background: linear-gradient(135deg, rgba(224, 255, 204, 0.4), rgba(192, 242, 185, 0.2));
+  background: linear-gradient(145deg, rgba(227, 246, 255, 0.6), rgba(179, 221, 242, 0.4));
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   border-radius: 20px;
@@ -1464,7 +1513,7 @@ th {
 }
 .c-card__item-skill {
   padding: 30px 10px 60px 10px;
-  fill: #fff;
+  background: linear-gradient(to bottom, #f5e1c0, #d8bfa3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media (min-width: 560px) {
@@ -1675,6 +1724,7 @@ th {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  background-color: #fff;
 }
 @media (min-width: 960px) {
   .c-slide__cat-list {
