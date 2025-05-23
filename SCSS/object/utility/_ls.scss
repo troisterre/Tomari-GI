@@ -1,0 +1,8 @@
+@use "../../foundation/base" as *;
+@use "../../global/mixin" as *;
+@use "../../global/color" as *;
+.u-ls {
+  &__4 {
+    letter-spacing: -0.4em;
+  }
+}

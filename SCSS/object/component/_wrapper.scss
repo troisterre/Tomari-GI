@@ -15,9 +15,12 @@
   }
   &__features {
     margin: 6rem 2.8rem;
-    @include breakpoint(pc) {
-      margin: 6.5rem auto;
-      max-width: 116rem;
+    @include breakpoint(tablet) {
+      margin: 6rem auto 0;
+      width: 80%;
+      @include breakpoint(pc) {
+        max-width: 80rem;
+      }
     }
   }
   &__course {
@@ -44,7 +47,7 @@
     @extend .c-wrapper;
     padding: 0 3rem 6rem 3rem;
     @include breakpoint(pc) {
-      margin-top: 6re;
+      margin-top: 6rem;
     }
   }
 }

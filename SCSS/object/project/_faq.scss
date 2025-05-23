@@ -12,6 +12,7 @@
   }
   &__note {
     margin-bottom: 1.5rem;
+    line-height: 2.4;
     @include breakpoint(tablet) {
       font-size: 2rem;
     }

@@ -26,7 +26,7 @@
     @extend .u-flex;
     flex-direction: column;
     align-items: center;
-    @include breakpoint(tablet) {
+    @include breakpoint(tablet-l) {
       flex-direction: row;
       align-items: center;
     }
@@ -58,7 +58,7 @@
     @extend .u-flex;
     flex-direction: column;
     align-items: center;
-    @include breakpoint(tablet) {
+    @include breakpoint(tablet-l) {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;

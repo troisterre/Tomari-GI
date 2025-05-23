@@ -8,13 +8,16 @@
     background: linear-gradient(145deg, rgba(255, 239, 219, 0.7), rgba(255, 214, 165, 0.5));
     backdrop-filter: blur(6px);
     border-radius: 2rem;
-    padding: 3rem 2rem;
+    padding: 3rem;
     @include breakpoint(tablet) {
+      margin: 0 auto;
+      max-width: 80rem;
+      margin-top: 4rem;
       padding: 3rem;
     }
   }
   &__left {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     justify-content: center;
     @include breakpoint(tablet) {
@@ -42,7 +45,7 @@
   }
   &__contents-features {
     width: 100%;
-    @include breakpoint(tablet) {
+    @include breakpoint(tablet-l) {
       width: 67%;
     }
     @include breakpoint(pc) {
@@ -50,10 +53,10 @@
     }
   }
   &__contents-text {
-    font-size: 1.6rem;
-    line-height: calc(20 / 16);
-    @include breakpoint(tablet) {
-      font-size: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    @include breakpoint(pc) {
+      font-size: 2rem;
     }
   }
   &__list-features {
@@ -80,7 +83,7 @@
     background: linear-gradient(145deg, rgba(227, 246, 255, 0.6), rgba(179, 221, 242, 0.4));
     backdrop-filter: blur(6px);
     border-radius: 2rem;
-    padding: 3rem 2rem 4rem 2ren;
+    padding: 3rem 2rem 4rem 2rem;
     @include breakpoint(tablet) {
       width: 75%;
     }
@@ -95,7 +98,7 @@
       margin-bottom: 1.6rem;
     }
     @include breakpoint(pc) {
-      font-size: 3.6rem;
+      font-size: 3rem;
     }
   }
   &__text-features {

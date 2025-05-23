@@ -31,9 +31,12 @@
     }
   }
   &__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.7;
     @include breakpoint(tablet) {
+      font-size: 1.8rem;
+    }
+    @include breakpoint(tablet-l) {
       font-size: 2rem;
     }
     @include breakpoint(pc) {
@@ -47,6 +50,7 @@
   &__cat-list {
     font-size: 1rem;
     font-family: serif;
+    border-radius: 0.5rem;
     display: flex;
     border: 1px solid $color-navy;
     padding: 0.3rem;

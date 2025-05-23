@@ -20,10 +20,10 @@
   }
   &__item-skill {
     @extend .c-card__item;
-    padding: 3rem 1rem 6rem 1rem;
+    padding: 3rem;
     background: linear-gradient(to bottom, #f5e1c0, #d8bfa3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    @include breakpoint(tablet) {
+    @include breakpoint(tablet-l) {
       width: 43%;
       padding: 3rem 2.4rem;
     }
