@@ -4,10 +4,10 @@
 .c-slide {
   &__img {
     flex-shrink: 0;
-    width: 100px; /* 画像のサイズを調整 */
+    width: 10rem; /* 画像のサイズを調整 */
     overflow: hidden;
     @include breakpoint(tablet) {
-      max-width: 250px;
+      max-width: 25rem;
       width: 100%;
       margin: 0 auto;
     }
@@ -18,38 +18,38 @@
   &__contents {
     flex: 1;
     @include breakpoint(pc) {
-      margin-left: 50px;
+      margin-left: 5rem;
     }
   }
   &__name {
-    font-size: 16px;
+    font-size: 1.6rem;
     @include breakpoint(tablet) {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
     @include breakpoint(pc) {
       font-size: 2.4rem;
     }
   }
   &__title {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.7;
     @include breakpoint(tablet) {
-      font-size: 20px;
+      font-size: 2rem;
     }
     @include breakpoint(pc) {
       font-size: 3rem;
     }
   }
   &__cat {
-    gap: 10px;
-    margin-top: 8px;
+    gap: 1rem;
+    margin-top: 0.8rem;
   }
   &__cat-list {
-    font-size: 10px;
+    font-size: 1rem;
     font-family: serif;
     display: flex;
     border: 1px solid $color-navy;
-    padding: 3px;
+    padding: 0.3rem;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;

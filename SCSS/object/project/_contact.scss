@@ -2,9 +2,9 @@
 @use "../../global/mixin" as *;
 @use "../../global/color" as *;
 .p-contact {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 8rem;
   &__checkbox {
     gap: 0.5rem;
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 }

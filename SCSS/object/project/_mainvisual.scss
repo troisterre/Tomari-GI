@@ -21,19 +21,19 @@
     text-align: center;
     @include breakpoint(tablet) {
       background-color: rgba(255, 245, 247, 0.85);
-      max-width: 600px;
+      max-width: 60rem;
       width: 85%;
-      height: 361.45px;
+      height: 36rem;
       flex-shrink: 0;
-      border-radius: 50px;
+      border-radius: 5rem;
       z-index: 50;
-      padding: 37px 0 45px;
+      padding: 3.7rem 0 4.5rem;
       margin: 4rem auto 3.5rem auto;
     }
     @include breakpoint(pc) {
-      max-width: 1160px;
+      max-width: 116rem;
       width: 85%;
-      min-height: 543px;
+      min-height: 54.3rem;
       padding: 5rem 6.6rem 4rem 6.6rem;
       margin: 12rem auto 0 auto;
     }
@@ -46,7 +46,7 @@
     line-height: calc(32 / 16);
     margin-bottom: 15px;
     @include breakpoint(tablet) {
-      font-size: 20px;
+      font-size: 2rem;
       line-height: calc(36 / 20); /* 180% */
     }
 
@@ -64,15 +64,15 @@
     font-size: 20px;
     line-height: calc(40 / 20); /* 200% */
     @include breakpoint(tablet) {
-      font-size: 24px;
+      font-size: 2.4rem;
       line-height: calc(52 / 30);
     }
     @include breakpoint(tablet-l) {
-      font-size: 30px;
+      font-size: 3rem;
       line-height: 1.75;
     }
     @include breakpoint(pc) {
-      font-size: 36px;
+      font-size: 3.6rem;
       line-height: calc(60 / 48);
     }
     @include breakpoint(pc-l) {
@@ -80,25 +80,25 @@
     }
   }
   &__bottom-text {
-    margin-bottom: 27px;
-    font-size: 18px;
+    margin-bottom: 2.7rem;
+    font-size: 1.8rem;
     @include breakpoint(tablet) {
-      margin-bottom: 20px;
-      font-size: 20px;
+      margin-bottom: 2rem;
+      font-size: 2rem;
     }
     @include breakpoint(pc) {
-      font-size: 30px;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
   }
   &__logo {
-    margin-bottom: 24px;
-    font-size: 24px;
+    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
     @include breakpoint(tablet) {
-      font-size: 30px;
+      font-size: 3rem;
     }
     @include breakpoint(pc) {
-      font-size: 52px;
+      font-size: 5.2rem;
     }
   }
   &__img-sp {

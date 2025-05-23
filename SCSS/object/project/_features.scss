@@ -2,11 +2,11 @@
 @use "../../global/mixin" as *;
 @use "../../global/color" as *;
 .p-features {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 8rem;
   @include breakpoint(tablet) {
-    padding-top: 500px;
+    padding-top: 50rem;
   }
   @include breakpoint(pc) {
-    padding-top: 900px;
+    padding-top: 90rem;
   }
 }

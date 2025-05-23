@@ -3,17 +3,17 @@
 @use "../../global/color" as *;
 .p-about {
   &__content {
-    gap: 20px;
+    gap: 2rem;
     background: linear-gradient(145deg, rgba(255, 239, 219, 0.7), rgba(255, 214, 165, 0.5));
-    border-radius: 20px;
-    padding: 20px 10px;
+    border-radius: 2rem;
+    padding: 2rem 1rem;
 
-    margin: 0 0 60px 0;
+    margin: 0 0 6rem 0;
     @include breakpoint(tablet) {
-      gap: 50px;
+      gap: 5rem;
     }
     @include breakpoint(pc) {
-      max-width: 1160px;
+      max-width: 116rem;
       gap: 2rem;
       width: 85%;
       padding: 3rem 2rem;
@@ -21,14 +21,14 @@
     }
   }
   &__media-intro {
-    gap: 15px;
+    gap: 1.5rem;
     @include breakpoint(pc) {
       width: 43%;
     }
   }
   &__img {
-    width: 150px;
-    height: 150px;
+    width: 15rem;
+    height: 15rem;
     @include breakpoint(pc) {
       width: 20rem;
       height: 20rem;
@@ -55,29 +55,29 @@
     }
   }
   &__text {
-    margin: 15px 0 0 0;
-    font-size: 14px;
+    margin: 1.5rem 0 0 0;
+    font-size: 1.4rem;
     line-height: 1.25;
     @include breakpoint(tablet) {
-      font-size: 20px;
-      margin: 30px 0 0 0;
+      font-size: 2rem;
+      margin: 3rem 0 0 0;
     }
   }
   &__heading--sub {
-    margin: 0 0 15px 0;
+    margin: 0 0 1.5rem 0;
   }
   &__info-contents {
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     @include breakpoint(tablet) {
-      gap: 50px;
+      gap: 5rem;
     }
   }
   &__info-contents:last-of-type {
     margin-bottom: 0;
   }
   &__info-title {
-    width: 60px;
+    width: 6rem;
   }
   &__info-text {
     flex: 1;
